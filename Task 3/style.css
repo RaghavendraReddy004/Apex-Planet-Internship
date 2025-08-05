@@ -1,0 +1,148 @@
+/* Font and Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 600px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 26px;
+  color: #00ffcc;
+}
+
+/* Quiz Section */
+.quiz-section {
+  margin-bottom: 30px;
+}
+
+.question-box {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.options-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-btn {
+  background: #333;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+.next-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.next-button:hover {
+  background-color: #00e6b8;
+}
+
+/* Result */
+.result-box {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+/* API Section */
+.api-section {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.api-section h2 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.joke-btn {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.joke-btn:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+.joke-text {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .question-box {
+    font-size: 16px;
+  }
+
+  .next-button {
+    font-size: 15px;
+  }
+}

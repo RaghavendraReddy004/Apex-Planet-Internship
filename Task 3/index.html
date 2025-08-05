@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>🚀 Web Development Quiz</h1>
+    </header>
+
+    <section class="quiz-section">
+      <div class="question-box">
+        <p id="question">Loading question...</p>
+      </div>
+      <div id="options" class="options-box"></div>
+      <button id="next-btn" class="next-button">Next</button>
+      <div id="result" class="result-box"></div>
+    </section>
+
+    <section class="api-section">
+      <h2>😄 Random Joke</h2>
+      <button onclick="fetchJoke()" class="joke-btn">Get a Joke</button>
+      <p id="joke" class="joke-text"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
